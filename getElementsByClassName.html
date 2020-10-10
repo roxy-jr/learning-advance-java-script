@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title class="geek">getElementsByClassName</title>
+</head>
+<body>
+    <h1>we are looking for getElementsByClassName</h1>
+    <p class="geek myclass"> thakur aditya pratap singh</p>
+    <p class=" myclass"> anmol prakash zakie</p>
+    <p class="geek"> aditya sharma</p>
+    <div>
+        <span class="geek">roxy pubg player</span>
+       <p> do you know <span class="geek">roxy pubg player</span></p>
+    </div>
+    <script>
+        var getshow=document.getElementsByClassName(" geek "); // this method return all the element by any particular class name
+        document.write(getshow+"<br>");
+        console.log(getshow);
+        var len=getshow.length; // length of the class name lists
+        for(var i=0;i<len;i++){
+            var result=document.getElementsByClassName("geek")[i];
+            document.write(result+"<br>");
+            console.log(result);
+        }
+    </script>
+</body>
+</html>
