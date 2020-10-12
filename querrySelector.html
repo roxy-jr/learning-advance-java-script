@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title class="geek">getElementsByClassName</title>
+</head>
+<body>
+    <h1 id="geek">thakur aditya <span class="re">pratap singh</span></h1>
+    <p clas="gp">he is very fool boy</p> 
+    <p class="gp"> he looses his temper</p>
+    <p class="re">and forget everything<span class="gp">when unable to eat momo</span></p>
+    <div id="show">
+        
+        <p class="gp">i am a drinker</p>
+        <p id="show">i am a drinker</p>
+    </div>
+    <script>
+        var data=document.querySelector("#show");
+        document.write(data+"<br>");    // id selector
+        console.log(data);
+        var result=document.querySelector(".gp");
+        document.write(result+"<br>");    // class selector
+        console.log(result);
+        var mata=document.querySelector("p,h1");
+        document.write(mata+"<br>");    // element selector
+        console.log(mata); // in multi argument selector the element has founf first that only be displayed
+    </script>
+    </body>
+    </html>

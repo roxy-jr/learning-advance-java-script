@@ -1,0 +1,17 @@
+<html>
+<head><title>ARRAY IN JS</title></head>
+<body bgcolor="#abczef">
+    <h1>WE ARE LOOKING ADVANCE JS METHOD</h1>
+    <h2>here we consider getelementbyTagname function</h2>
+    <p id="sp">Hello Aditya<span> HERO</span> Pratap Singh</p>
+    <p id="jc">iam studying<span>engg</span> in institute<span> india</span> of technlogy<span>NON HEROIC</span> and management gida gkp</p>
+    <script>
+        var len=document.getElementsByTagName("p").length; //length used to know how many elements of particular tag name
+        document.write(len+"<br>");     // the p tag written first in document appear as index 0, 2nd p tag as index 1 and so on...
+        console.log(len);
+        var res=document.getElementsByTagName("span").length; //it return all the span tag used in the document in form of array
+        document.write(res);     // the span tag written first in document appear as index 0, 2nd span tag as index 1 and so on...
+        console.log(res);
+    </script>
+    </body>
+    </html>
