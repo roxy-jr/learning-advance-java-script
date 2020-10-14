@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title class="geek">getElementsByClassName</title>
+</head>
+<body>
+    <h1 id="geek">thakur aditya <span class="re">pratap singh</span></h1>
+    <p clas="gp">he is very fool boy</p> 
+    <p class="gp"> he looses his temper</p>
+    <p class="re">and forget everything<span class="gp">when unable to eat momo</span></p>
+    <div id="show">
+        
+        <p class="gp">i am a drinker</p>
+        <p class="gp">i am a drinker</p>
+        <p id="sho">i am a drinker</p>
+    </div>
+    <script>
+        var data=document.querySelectorAll("#geek,#show");
+        document.write(data+"<br>");    // id selectorAll
+        var re=data.length;
+        document.write(re+"<br>");
+        var sata=document.querySelectorAll(".gp,.re");
+        document.write(data+"<br>");    // class selectorAll
+        var res=sata.length;
+        document.write(res+"<br>");
+        var adi=document.getElementById("show");
+        var sarika=adi.getElementsByClassName(".gp");
+        var sarik=sarika.length;
+        document.write(sarik+"<br>")
+      
+      
+    </script>
+    </body>
+    </html>
