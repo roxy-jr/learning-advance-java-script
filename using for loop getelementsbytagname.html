@@ -1,0 +1,38 @@
+<html>
+<head><title>ARRAY IN JS</title></head>
+<body bgcolor="#abczef">
+    <h1>WE ARE LOOKING ADVANCE JS METHOD</h1>
+    <h2>here we consider getelementbyTagname function</h2>
+    <p id="sp">Hello Aditya<span> HERO</span> Pratap Singh</p>
+    <p id="jc">iam studying<span>engg</span> in institute<span> india</span> of technlogy<span>NON HEROIC</span> and management gida gkp</p>
+    <script>
+        var data=document.getElementsByTagName("p"); //length used to know how many elements of particular tag name
+        var len=data.length;
+       // the p tag written first in document appear as index 0, 2nd p tag as index 1 and so on...
+      /*  for(var i=0;i<len;i++){
+            var result=document.getElementsByTagName("p")[i];
+            document.write(result+"<br>");
+            console.log(result);
+        } */
+        for(var value of data){
+            document.write(value+"<br>");   // using for of loop
+            console.log(value);
+        }
+    </script>
+    <h2>we are looking for span tag</h2>
+    <script>
+    var data=document.getElementsByTagName("span"); //length used to know how many elements of particular tag name
+    var len=data.length;
+   // the span tag written first in document appear as index 0, 2nd p tag as index 1 and so on...
+   /* for(var i=0;i<len;i++){
+        var result=document.getElementsByTagName("span")[i];
+        document.write(result+"<br>");
+        console.log(result);
+    } */
+    for(var adi of data){
+            document.write(adi+"<br>");  // using for of loop
+            console.log(adi);
+        }
+</script>
+    </body>
+    </html>
