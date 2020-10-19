@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title class="geek">properties of node object</title>
+</head>
+<body bgcolor="pink">
+    <h1 id="mine" align="center">SARIKA PATWA</h1>
+    <p class="myclass" id="no" align="center" title="para">PASSED INTERMEDIATE FROM B.N PUBLIC SCHOOL</p>
+    <ul id="xxx">
+        <li id="lko" > ADITYA PRATAP SINGH</li>
+        <li> ROXY</li>
+        <li id="gog">khusi</li>
+        <li> PUNE</li>
+    </ul>
+    </body>
+    <script>
+        var res=document.getElementById("xxx");
+        var data=res.children;// it returns only the element child and ignore the text node,comment etc;
+        console.log(data);
+        var dog=res.children[0].textContent="SARIKA PATWA";
+        console.log(dog);//it also used to change the text content of element children.
+    </script>
+    </html>
