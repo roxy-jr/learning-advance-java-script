@@ -1,0 +1,25 @@
+<html>
+<head>
+<title class="geek">properties of node object</title>
+</head>
+<body bgcolor="#678976">
+    <h1 id="mine" align="center">ANMOL ZAKIE</h1>
+    <p class="myclass" id="no" align="center" title="para">PASSED INTERMEDIATE FROM B.N PUBLIC SCHOOL</p>
+    <ul id="xxx" class="vc">
+        <li id="lko" > ADITYA PRATAP SINGH</li>
+        <li> ROXY</li>
+        <li id="gog">khusi</li>
+        <li> PUNE</li>
+    </ul>
+    <script>
+        var res=document.getElementById("xxx");
+        console.log(res.lastChild.previousSibling);
+        // previousSibling used to acces the content of its previous sibling, it consider also text comment etc
+        res.lastChild.previousSibling.textContent="aditya";
+        console.log(res); // we can also change the content of this.
+        var data=document.getElementsByClassName("vc");
+     console.log(data.lastChild.previousElementSibling);// it igore the text, comment and return only element node.
+     // but some browser does not support this property
+    </script>
+    </body>
+    </html>
