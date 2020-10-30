@@ -1,0 +1,25 @@
+<html>
+    <body bgcolor="#678976">
+    <h1 id="mine" align="center">NORMALIZE METHOD IN ADVANCE JS</h1>
+    <h2 align="center">ADITYA PRATAP SINGH</h2>
+    <h3 align="center">SARIKA PATWA</h3>
+    <p class="myclass" id="no" align="center" title="para">PASSED INTERMEDIATE FROM B.N PUBLIC SCHOOL</p>
+    <section id="mysec">
+        <li>roxy</li>
+        <li>khusi</li>
+        <li>tanisq</li>
+        <li>supriya</li>
+    </section>
+    <div id="sarika">
+     <h1 align="center"> we have completed 3 years on 27-08-2020 together</h1>
+    </div>
+    <script>
+        // normalize method remove empty text nodes
+        //and join adjacent text node so there will be no adjacent text node
+        var ds=document.getElementById("sarika");//acessing parent node
+       var sd=  document.createTextNode("they are simply awesome");// creating a text node
+        var sp=ds.appendChild(sd);// parentnode.appndChild(childNode);
+        ds.normalize();
+            </script>
+    </body>
+    </html>
