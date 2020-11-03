@@ -1,0 +1,29 @@
+<html>
+    <body bgcolor="#678976">
+    <h1 id="mine" align="center">DOCUMENT FRAGMENT APPEND EXISTING NODE</h1>
+    <h2 align="center">ADITYA PRATAP SINGH</h2>
+    <h3 align="center">SARIKA PATWA</h3>
+    <p class="myclass" id="no" align="center" title="para">PASSED INTERMEDIATE FROM B.N PUBLIC SCHOOL</p>
+    <section id="mysec">
+        <li>adi</li>
+        <li id="c">sarika</li>
+        <li>aspra</li>
+        <li>vatsalya</li>
+    </section>
+    <div id="sarika">
+     <h1 align="center"> we have completed 3 years on 27-08-2020 together</h1>
+    </div>
+    <script>
+        // this method is use to insert the reference node as
+        //a child of a parent node.
+        //if the reference node is null the new node is inserted at the end
+        //of the list of child node.
+        //syntax-->> var d=parentNode.insertBefore(newNode,referenceNode);
+        var parentNode=document.getElementById("mysec");
+        var newNode=document.createElement("li");
+        var refNode=document.getElementById("c");
+        parentNode.insertBefore(newNode,refNode);
+        newNode.textContent="Khushi";// a new node khushi is created as li
+        </script>
+        </body>
+        </html>
